@@ -40,16 +40,17 @@ const Table: React.FC<PropsType> = (props) => {
     useEffect(() => {
         // ПОЛУЧЕНИЕ ДАННЫХ ИЗ СЕРВЕРА
 
-        get_data().then(data => {
-            setData(data) 
-            // возьмем названия столбцов таблицы из ключей первого объекта из массива data
-            set_columns_headers_names(Object.keys(data[0]) as ColumnNamesType[])
-        })
+        // get_data().then(data => {
+        //     setData(data) 
+        //     // возьмем названия столбцов таблицы из ключей первого объекта из массива data
+        //     set_columns_headers_names(Object.keys(data[0]) as ColumnNamesType[])
+        // })
 
         // ПОЛУЧЕНИЕ ДАННЫХ ИЗ ФАЙЛА (для тестирования таблицы раскоментировать до конца useEffect и закоментировать с начала useEffect)
         
-        // setData(props.tets_data)
-        // set_columns_headers_names(Object.keys(props.tets_data[0]) as ColumnNamesType[])
+        setData(props.tets_data)
+        // возьмем названия столбцов таблицы из ключей первого объекта из массива data
+        set_columns_headers_names(Object.keys(props.tets_data[0]) as ColumnNamesType[])
     }, [])
 
     if (!data || !columns_headers_names) return <EmptyPage />
