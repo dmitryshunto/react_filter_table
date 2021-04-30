@@ -1,0 +1,32 @@
+.bold_font {
+    font-weight: bold
+}
+
+.inputs_block {
+    display: flex;
+    justify-content: center;
+}
+
+.filter_block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 5px;
+    width: 15%;
+    text-align: center;
+    border: 1px;
+    background: rgb(184, 192, 176);
+    border: 1px solid aliceblue;
+}
+
+.cell > button {
+    margin: 2%;
+}
