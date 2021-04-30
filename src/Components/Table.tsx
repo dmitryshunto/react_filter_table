@@ -46,7 +46,7 @@ const Table: React.FC<PropsType> = (props) => {
         //     set_columns_headers_names(Object.keys(data[0]) as ColumnNamesType[])
         // })
 
-        // ПОЛУЧЕНИЕ ДАННЫХ ИЗ ФАЙЛА (для тестирования таблицы раскоментировать до конца useEffect и закоментировать с начала useEffect)
+        // ПОЛУЧЕНИЕ ДАННЫХ ИЗ ФАЙЛА (для тестирования таблицы)
         
         setData(props.tets_data)
         // возьмем названия столбцов таблицы из ключей первого объекта из массива data
